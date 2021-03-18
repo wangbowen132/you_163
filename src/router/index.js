@@ -1,15 +1,40 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import App_index from '@/views/App_index'
+import home from './home'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'App_index',
-    component: App_index
-  }
+    redirect: '/home'
+  },
+  {
+    path: '/home',
+    name: 'Home',
+    component: () => import('@/views/Home'),
+    children: home
+  },
+  {
+    path: '/classify',
+    name: 'Classify',
+    component: () => import('@/views/Classify')
+  },
+  {
+    path: '/topic',
+    name: 'Topic',
+    component: () => import('@/views/Topic')
+  },
+  {
+    path: '/shoppingcart',
+    name: 'Shoppingcart',
+    component: () => import('@/views/Shoppingcart')
+  },
+  {
+    path: '/personal',
+    name: 'Personal',
+    component: () => import('@/views/Personal')
+  },
 ]
 
 const router = new VueRouter({

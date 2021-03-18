@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "20384754",
+      "name": "柜子",
+      "font_class": "guizi",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

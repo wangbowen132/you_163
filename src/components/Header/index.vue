@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  name: 'Header',
   data(){
     return {
       value: ''
@@ -27,56 +28,52 @@ export default {
 
 <style lang="scss" scoped>
 .header{
-  padding: .16rem .28rem;
-  height: .52rem;
+  padding: .213333rem .373333rem;
+  height: .746667rem;
+  background-color: white;
   .van-col{
     height: 100%;
     // 使内部的 inline-block 元素排在一行
     font-size: 0;
   }
   .header_logo_img{
-    background: url('../../assets/you_logo.png') no-repeat;
-    background-size: 1.32rem .32rem;
-    height: .32rem;
-    width: 1.32rem;
-    margin-right: .2rem;
-    margin-top: .1rem;
+    background: url('../../assets/img/you_logo.png') no-repeat;
+    background-size: 1.76rem .426667rem;
+    height: .426667rem;
+    width: 1.84rem;
+    margin-right: .266667rem;
+    margin-top: .133333rem;
   }
   .van-search{
     padding: 0;
-    width: 4.56rem;
+    width: 5.893333rem;
     height: 100%;
     .van-search__content {
       padding: 0;
       background-color: #EDEDED;
-      border-radius: .16rem;
+      border-radius: .106667rem;
       height: 100%;
       .van-cell{
         padding: 0;
         align-items: center;
         justify-content: center;
-        ::v-deep .van-icon{
-          font-size: .32rem;
-        }
         ::v-deep .van-cell__value{
           flex: 0 1 auto;
-          font-size: .28rem;
           .van-field__control::-webkit-input-placeholder {
             color: #666666;
-            font-size: .28rem;
           }
         }
       }
     }
   }
   .van-button{
-    height: .4rem;
-    width: .72rem;
+    height: .533333rem;
+    width: .96rem;
     padding: 0;
-    border-radius: .06rem;
-    font-size: .24rem;
-    margin-left: .14rem;
-    margin-top: .06rem;
+    border-radius: .08rem;
+    font-size: .32rem;
+    margin-left: .213333rem;
+    margin-top: .08rem;
   }
 }
 </style>

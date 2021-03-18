@@ -1,13 +1,28 @@
 <template>
   <div id="app">
-    <router-view/>
+
+    <keep-alive>
+      <router-view />
+    </keep-alive>
+
+    <Footer />
+
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  
+<script>
+import Footer from '@/components/Footer'
+
+export default {
+  name: 'App',
+  components: {
+    Footer
+  }
 }
-
-
+</script>
+<style lang="scss" scoped>
+#app{
+  font-size: 12px;
+  white-space: nowrap;
+}
 </style>
